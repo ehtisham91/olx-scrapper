@@ -1,4 +1,4 @@
-# instagram-scraper
+# Olx-scraper
 
 It is a cmd application written in Python and it scrapes and downloads an instagram user's photos.
 
