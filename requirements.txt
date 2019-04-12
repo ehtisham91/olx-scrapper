@@ -1,0 +1,9 @@
+beautifulsoup4
+lxml
+requests
+pandas
+matplotlib
+seaborn
+Pillow
+selenium
+xlsxwriter
