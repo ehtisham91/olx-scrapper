@@ -1,6 +1,6 @@
 # Olx-scraper
 
-It is a cmd application written in Python and it scrapes and downloads an user mobile numbers from olx.
+It is a cmd application written in Python and it scrapes and downloads user mobile numbers from olx.
 
 
 For running program, follow below steps
