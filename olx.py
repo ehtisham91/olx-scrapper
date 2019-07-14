@@ -29,7 +29,7 @@ class Olx:
         self.driver.close()
 
     def write_numbers_to_excel_file(self):
-        workbook = Workbook(os.path.join(self.path, 'numbers.xlsx'))
+        workbook = Workbook('numbers.xlsx')
         worksheet = workbook.add_worksheet()
         row = 0
         worksheet.write(row, 0, 'Mobile Numbers')
