@@ -28,7 +28,6 @@ After Installing required dependencies , open credentials.py and change it to yo
 |:--------------------:|:---:|:----------------------------------------------------:|
 | Email                | str | Your olx username/email                              |
 | password             | str | Your olx password                              |
-| Path                 | str | Directory path where you want to save mobile numbers |
 | Driver_path          | str | Path of your chrome driver                           |
 
 
