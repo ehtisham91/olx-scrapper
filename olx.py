@@ -6,7 +6,7 @@ from xlsxwriter import Workbook
 from credentials import Email, Password, Driver_path, Path
 
 class Olx:
-    def __init__(self, total_numbers=40, ):
+    def __init__(self, total_numbers=38, ):
         self.username = Email
         self.password = Password
         self.path = Path
@@ -38,17 +38,23 @@ class Olx:
         for link in self.all_links:
             try:
                 self.driver.get('https://www.olx.com.pk' + str(link.a['href']))
+                # self.driver.maximize_window()
                 time.sleep(5)
                 show_number = self.driver.find_element_by_xpath('//div[contains(text(), "Show number")]')
+
                 parent_class = show_number.find_element_by_xpath("./..").get_attribute('class')
                 show_number.click()
 
                 time.sleep(3)
                 parent = self.driver.find_element_by_class_name(parent_class)
-                number = parent.find_elements_by_css_selector("*")[1].text
+
+                number = parent.find_elements_by_css_selector("*")[3].text
+
                 worksheet.write(row, 0, number)
+
                 row += 1
                 time.sleep(2)
+                
             except Exception as e:
                 print(e)
                 continue
@@ -56,6 +62,7 @@ class Olx:
 
     def load_all_adds(self):
         try:
+            self.driver.maximize_window()
             if self.number_count < 20:
                 loop = 1
             else:
