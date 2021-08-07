@@ -1,4 +1,4 @@
-# [DEPRECATED] # Olx-scraper
+ [DEPRECATED] # Olx-scraper
 
 It is a cmd application written in Python and it scrapes and downloads user mobile numbers from olx.
 
